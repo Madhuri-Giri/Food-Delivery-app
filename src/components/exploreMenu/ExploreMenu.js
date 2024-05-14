@@ -50,12 +50,13 @@ const ExploreMenu = ({category, setCategory}) => {
       <h1>Explore our menu </h1>
       <p className='explore-menu-text'>Choose from diserve menu featuring a delectable array of dishes crafted with the finest ingredients and culinary expertise. Our mission is to satisfy your cravings and elevate your dining experience. One delicious meal at a time.</p>
      <div className='explore-menu-list'>
-        {mockData.map((cartData, index)=>(
+        {mockData.map((cartData, index)=>{
+            return(
         <div onClick={()=>setCategory(prev=>prev===cartData.name?"All":cartData.name)} key={index} className='explore-menu-list-item'>
         <img className={category===cartData.name?"active":""} src={cartData.image} alt="" />
         <p>{cartData.name}</p>
         </div>
-        ) )} 
+        ) })} 
     </div>
     <hr/>
      </div>

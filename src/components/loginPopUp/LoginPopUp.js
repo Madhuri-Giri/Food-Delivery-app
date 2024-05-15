@@ -27,7 +27,6 @@ const LoginPopUp = ({ setShowLogin }) => {
           <p>Create a New Account <span onClick={() => setCurrState("Sign-Up")}>Click Here</span></p>
           : <p>Already have an Account <span onClick={() => setCurrState("Login")}>Login here</span></p>}
       </form>
-      <div><h2>hello</h2> </div>
     </div>
   );
 };
